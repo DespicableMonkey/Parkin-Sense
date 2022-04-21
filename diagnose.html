@@ -471,8 +471,14 @@ canvas {
 								<h4>Make sure your camera can see your face, and that your microphone is picking up audio below.</h4>
 								<canvas id="vid"></canvas>
 								<script src="facemodel.js"></script>
+								<button id="clickstart">HELLO</button>
 								<script> 
 									detect();
+
+									function starter() {
+										getAudioContext().resume();
+									}
+									document.getElementById("clickstart").addEventListener("click", starter)
 								</script>
 									
 

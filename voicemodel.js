@@ -14,6 +14,7 @@ function setup() {
   fft = new p5.FFT(0.001);
   fft.setInput(mic);
   peak = new p5.PeakDetect(60, 100, 0.05);
+  getAudioContext().resume();
 }
 
 function draw() {
